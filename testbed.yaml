@@ -1,0 +1,11 @@
+devices:
+  linux_server:
+    os: linux
+    connections:
+      cli:
+        protocol: ssh
+        ip: 10.16.9.71
+    credentials:
+      default:
+        username: admin
+        password: CP!admn
