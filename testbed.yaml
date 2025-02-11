@@ -4,7 +4,7 @@ devices:
     connections:
       cli:
         protocol: ssh
-        ip: 10.16.9.71
+        ip: 10.16.9.69
     credentials:
       default:
         username: admin

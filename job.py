@@ -16,14 +16,15 @@
 
 import os
 from pyats.easypy import run
-import radius
+# import radius
+import tacacs
 
 def main(runtime):
     """
     This job file runs only the RADIUS tests.
     """
     # import pdb;pdb.set_trace()
-    test_scripts = radius.list_test_scripts()
+    test_scripts = tacacs.list_test_scripts()
     print("Discovered scripts:", test_scripts)
 
     for script in test_scripts:
