@@ -1,0 +1,28 @@
+
+devices:
+    admin_device:
+      os: linux
+      connections:
+        defaults:
+          class: unicon.Unicon
+        ssh:
+          protocol: ssh
+          ip: 10.16.9.77   # IP for admin TACACS server
+      credentials:
+        default:
+          username: admin
+          password: CP!admn
+    test_user_device:
+      alias: test_user_tacacs
+      os: linux
+      connections:
+        defaults:
+          class: unicon.Unicon
+        ssh:
+          protocol: ssh
+          ip: 10.16.9.77   # IP for test_user TACACS server
+          port: 22
+      credentials:
+        default:
+          username: test_user
+          password: test123

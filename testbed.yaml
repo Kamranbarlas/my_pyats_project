@@ -1,10 +1,10 @@
 devices:
-  linux_server:
+  admin_device:
     os: linux
     connections:
       cli:
         protocol: ssh
-        ip: 10.16.9.69
+        ip: 10.16.9.70
     credentials:
       default:
         username: admin

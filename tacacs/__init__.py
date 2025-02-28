@@ -1,13 +1,16 @@
 import os
-print("Initializing parent package")
-print("__file__ is:", __file__)  # debug line
 def list_test_scripts():
     package_dir = os.path.dirname(os.path.abspath(__file__))
     print("package_dir is:", package_dir)  # debug line
 
     ordered_tests = [
+        # 'test_94501.py',
+        '123.py',
+        '456.py',
         'test_tacacs_server_availability.py',
-        'test_add_server.py',
+        # 'test_add_server.py',
+        # 'test_tacacs_role_enforcer.py',
+        # 'testing.py',
         # 'test_delete_server',
         # 'test_multiple_server.py',
         # 'test_verify_configure_key.py',
